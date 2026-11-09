@@ -1,0 +1,12 @@
+CREATE USER marketing IDENTIFIED BY "Marketing123!";
+
+GRANT CREATE SESSION TO marketing;
+
+GRANT CREATE TABLE TO marketing;
+
+GRANT CREATE VIEW TO marketing;
+
+GRANT CREATE SEQUENCE TO marketing;
+
+ALTER USER marketing QUOTA 100M ON USERS;
+
